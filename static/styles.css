@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+main {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  display: flex;
+  align-items: stretch;
+}
+
+#model {
+  font-size: small;
+}
+
+.smartphone {
+  margin: 10px;
+  padding: 10px;
+  min-width: 350px;
+  min-height: 600px;
+  background: #181717;
+  box-shadow: 2px 2px 2px 4px rgb(0 0 0 / 20%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+}
+
+.screen {
+  width: 400px;
+  position: relative;
+  height: 590px;
+  background-color: black;
+  margin: 10px 0;
+}
+
+.home {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #4e4c4b;
+}
+
+.charger {
+    margin-top: 20px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in;    
+}
+
+.charger #metal {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(177, 177, 177);
+    border: 1px solid #4e4c4b;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+.charger #metal .white-shit{
+    width: 25px;
+    height: 10px;
+    border-radius: 3px 3px 0px 0px;
+    background-color: azure;
+    display: flex;
+}
+
+.electrons {
+    width: 2px;
+    margin: 0 1px;
+    height: 10px;
+    background-color: gold;
+}
+
+.charger .plastic {
+    width: 38px;
+    height: 50px;
+    background-color: rgb(238, 232, 232);
+    border: 1px solid #aca8a6;
+}
+
+.charger .cabel{
+    width: 15px;
+    height: 80px;
+    background-color: rgb(238, 232, 232);
+    border: 1px solid #9b9998;
+
+}
+
+.clicked{
+    transform: translateY(-60px);
+}
+
+.lock-btn {
+  width: 10px;
+  height: 60px;
+  right: 0;
+  top: 150px;
+  background-color: #181717;
+  transform: translateX(10px);
+  position: absolute;
+  transition: transform .2s ease-in;
+}
+
+.lock-btn:hover{
+  cursor: pointer;
+  transform: translateX(5px);
+}
+
+.locked-screen{
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #A9C9FF;
+  background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+}
+
+.locked-screen h1{
+  font-size: 80px;
+  margin: 20px;
+}
+.locked-screen h3{
+  font-size: 20px;
+}
+
+.locked-screen p {
+  margin-top: 300px;
+}
+
+.home-screen {
+  display: none;
+  height: 100%;
+  padding-top: 40px;
+  border-radius: 10px;
+  width: 100%;
+  background: linear-gradient(#F1F2B5, #135058);
+}
+
+.nav-panel {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  font-size: 25px;
+}
+#battery {
+  display: flex;
+  align-items: center;
+}
+
+.charged {
+  color: #5DA271;
+}
+
+.fa-battery-full {
+  margin-right: 5px;
+}
+
+.grid{
+  margin-top: 35px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+  align-items: flex-start;
+  max-width: 350px;
+  grid-gap: 10px;
+  margin: 0 auto;
+}
+
+.grid img{
+  width: 100%;
+}
+.grid button{
+  background-color: transparent;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.app {
+  display: none;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #135058;
+  color: white;
+  padding: 30px;
+  overflow-x: hidden;
+  overflow-y :auto;
+}
+
+.app h1 {
+  border: 1px solid;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.app input {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  width: 100%;
+  line-height: 20px;
+}
+
+.app button {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.app ul{
+  margin: 10px 0px;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  word-wrap: break-word;
+}
+
+
+.player {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #F1F2B5;
+  border-radius: 10px;
+  padding: 10px;
+  color: #135058;
+}
+
+.player label {
+  font-size: 30px;
+}
+.game {
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.game p{
+  width: 100%;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.game img {
+  border-radius: 10px;
+}
+
+.app #result {
+  width: 100%;
+  height: 40px;
+  margin: 20px 0;
+  background-color:#181717;
+  font-size: 30px;
+  border-radius: 10px;
+}
+
+.app .operations {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.operations button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+}
+
+.operations button:hover {
+  background-color: #181717;
+  color: whitesmoke;
+}
+
+.app .inputs {
+  display: flex;
+  margin: 10px;
+  width: 100%;
+}
+
+.contacts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contacts .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F1F2B5;
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.contacts li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  border-bottom: 1px  solid #181717;
+}
+
+.addContact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
+  flex-wrap: wrap;
+}
+.addContact input {
+  width: 60%;
+}
+
+.addContact button {
+  margin: 20px auto;
+}
+
+.calling {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+.calling h5{
+  margin: 20px;
+  font-size: 20px;
+}
+
+.calling h2{
+  font-size: 50px;
+}
+
+.calling p {
+  font-size: 20px;
+  animation: blink 1.5s ease-in infinite;
+}
+
+.endCall {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50% !important;
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  color: #181717;
+  margin-top: 100px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
