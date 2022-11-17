@@ -20,11 +20,13 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 h1{
   display: flex;
-  align-items: stretch;
+  justify-content: center;
+  margin-bottom: 8px;
 }
 
 #model {
@@ -35,7 +37,7 @@ h1{
   margin: 10px;
   padding: 10px;
   min-width: 350px;
-  min-height: 600px;
+  min-height: 510px;
   background: #181717;
   box-shadow: 2px 2px 2px 4px rgb(0 0 0 / 20%);
   border-radius: 20px;
@@ -45,14 +47,18 @@ h1{
   justify-content: center;
   z-index: 1;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .screen {
-  width: 400px;
+  width: 330px;
   position: relative;
-  height: 590px;
+  height: 420px;
   background-color: black;
-  margin: 10px 0;
+}
+
+.home-button{
+  margin-top: 7px;
 }
 
 .home {
@@ -60,6 +66,7 @@ h1{
   height: 60px;
   border-radius: 50%;
   background-color: #4e4c4b;
+ 
 }
 
 .charger {
@@ -71,8 +78,8 @@ h1{
 }
 
 .charger #metal {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background-color: rgb(177, 177, 177);
     border: 1px solid #4e4c4b;
     border-radius: 3px;
@@ -81,7 +88,7 @@ h1{
 }
 
 .charger #metal .white-shit{
-    width: 25px;
+    width: 20px;
     height: 10px;
     border-radius: 3px 3px 0px 0px;
     background-color: azure;
@@ -96,15 +103,15 @@ h1{
 }
 
 .charger .plastic {
-    width: 38px;
-    height: 50px;
+    width: 33px;
+    height: 40px;
     background-color: rgb(238, 232, 232);
     border: 1px solid #aca8a6;
 }
 
 .charger .cabel{
     width: 15px;
-    height: 80px;
+    height: 45px;
     background-color: rgb(238, 232, 232);
     border: 1px solid #9b9998;
 
@@ -143,7 +150,7 @@ h1{
 }
 
 .locked-screen h1{
-  font-size: 80px;
+  font-size: 70px;
   margin: 20px;
 }
 .locked-screen h3{
@@ -151,7 +158,7 @@ h1{
 }
 
 .locked-screen p {
-  margin-top: 300px;
+  margin-top: 200px;
 }
 
 .home-screen {
@@ -189,9 +196,9 @@ h1{
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
   align-items: flex-start;
-  max-width: 350px;
+  max-width: 300px;
   grid-gap: 10px;
   margin: 0 auto;
 }
@@ -224,8 +231,10 @@ button:hover {
 
 .app h1 {
   border: 1px solid;
-  margin: 10px 0;
   padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
 }
 
 .app input {
@@ -233,12 +242,11 @@ button:hover {
   padding: 10px;
   border-radius: 20px;
   width: 100%;
-  line-height: 20px;
 }
 
 .app button {
-  font-size: 20px;
-  padding: 10px;
+  font-size: 15px;
+  padding: 7px;
   border-radius: 10px;
 }
 
@@ -279,6 +287,7 @@ button:hover {
 
 .game img {
   border-radius: 10px;
+  width: 100%;
 }
 
 .app #result {
@@ -299,10 +308,10 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 40px;
+  font-size: 30px;
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   margin: 5px;
 }
 
@@ -376,7 +385,7 @@ button:hover {
 }
 
 .calling h2{
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .calling p {
@@ -393,7 +402,7 @@ button:hover {
   height: 80px;
   background-color: red;
   color: #181717;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 @keyframes blink {

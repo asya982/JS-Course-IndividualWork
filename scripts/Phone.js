@@ -3,7 +3,7 @@
 function Phone(name, icon, contactList) {
     Apps.call(this, name, icon);
     this.__contactList = contactList;
-    this.htmlTemplate = "<h1>Phone</h1><div class='contacts'><div class='header'><h2>Contact list</h2><button id='addContact'>+</button></div><ul></ul></div><div class='addContact' style='display:none'><label for='number'>+38</label><input name='number' type='number' required><label for='contact'>Name</label><input type='text' name='contact' required><button class='addBtn'>Add</button></div><div style='display:none' class='calling'></div><div class='end'><button class='endCall' style='display:none'><i class='fa-solid fa-phone-slash'></i></button></div>"
+    this.htmlTemplate = "<div class='contacts'><h1>Phone</h1><div class='header'><h2>Contact list</h2><button id='addContact'>+</button></div><ul></ul></div><div class='addContact' style='display:none'><label for='number'>+38</label><input name='number' type='number' required><label for='contact'>Name</label><input type='text' name='contact' required><button class='addBtn'>Add</button></div><div style='display:none' class='calling'></div><div class='end'><button class='endCall' style='display:none'><i class='fa-solid fa-phone-slash'></i></button></div>"
 }
 
 Phone.prototype = Object.create(Apps.prototype);
